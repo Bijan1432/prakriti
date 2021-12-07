@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0%;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1123,10 +1123,16 @@ a {
   .map iframe {
     height: 50vh;
   }
+  .banner .text {
+    margin-top: 30%;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 575px) {
   .over h3::after {
     left: 40%;
+  }
+  .banner .text {
+    margin-top: 30%;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -1139,5 +1145,8 @@ a {
 @media only screen and (max-width: 360px) {
   .banner {
     height: 75vh;
+  }
+  .banner .text {
+    margin-top: 30%;
   }
 }
