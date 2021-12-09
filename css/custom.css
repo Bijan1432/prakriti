@@ -558,6 +558,15 @@ p {
     padding: 25px 0;
   }
 }
+.project-gallery .img-size img {
+  width: 450px !important;
+  height: 305px !important;
+}
+@media only screen and (min-width: 480px) and (max-width: 850px) {
+  .project-gallery .img-size img {
+    width: 100% !important;
+  }
+}
 .gal-text {
   width: 70%;
 }
@@ -1187,7 +1196,7 @@ uncomment this part if you haven't added this code anywhere else
           transform: rotate(-90deg);
   right: -75px;
   position: fixed;
-  top: 290px;
+  top: 370px;
   background-color: #425811;
   padding: 12px 25px;
   font-weight: 500;
@@ -1202,6 +1211,149 @@ uncomment this part if you haven't added this code anywhere else
   transition: all 0.5s ease-in-out 0s;
   font-size: 14px;
   border: 0px;
+}
+.side-btn2 {
+  float: right;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  right: -45px;
+  position: fixed;
+  top: 175px;
+  background-color: #425811;
+  padding: 12px 25px;
+  font-weight: 500;
+  border-top-left-radius: 37px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 37px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  font-size: 14px;
+  border: 0px;
+}
+#emi-calculation {
+  -webkit-box-shadow: 0px 0px 5px -1px grey;
+          box-shadow: 0px 0px 5px -1px grey;
+  padding: 30px 8px;
+}
+#title {
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  text-decoration: none;
+}
+#emi-output {
+  padding: 30px 8px;
+  -webkit-box-shadow: 0px 0px 5px -1px grey;
+          box-shadow: 0px 0px 5px -1px grey;
+  margin-top: 10px;
+}
+.section {
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+.result {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 5px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+.input {
+  float: right;
+  height: 33px;
+  width: 45%;
+  margin-right: 10px;
+  text-align: center;
+}
+.input::-webkit-input-placeholder {
+  font-size: 12px;
+}
+.input::-moz-placeholder {
+  font-size: 12px;
+}
+.input:-ms-input-placeholder {
+  font-size: 12px;
+}
+.input::-ms-input-placeholder {
+  font-size: 12px;
+}
+.input::placeholder {
+  font-size: 12px;
+}
+@media only screen and (max-width: 552px) {
+  .input::-webkit-input-placeholder {
+    font-size: 8px;
+  }
+  .input::-moz-placeholder {
+    font-size: 8px;
+  }
+  .input:-ms-input-placeholder {
+    font-size: 8px;
+  }
+  .input::-ms-input-placeholder {
+    font-size: 8px;
+  }
+  .input::placeholder {
+    font-size: 8px;
+  }
+}
+.submit {
+  text-align: center;
+  margin-top: 20px;
+}
+#reset {
+  background-color: orange;
+}
+.label {
+  font-size: 17px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 992px) {
+  .modal-md {
+    max-width: 575px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  #border {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .label,
+  .result {
+    font-size: 10px;
+  }
+  #title {
+    font-size: 20px;
+  }
+  #emi-calculation {
+    max-width: 100%;
+  }
+  #emi-output {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .section {
+    font-size: 16px;
+  }
+  .input {
+    width: 100px;
+  }
 }
 @media only screen and (max-width: 700px) {
   .footer .copy {
@@ -1298,4 +1450,15 @@ a {
   .banner .text {
     margin-top: 30%;
   }
+}
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #fff;
+}
+.nav-pills .nav-link.active {
+  background-color: transparent;
+  color: #425811;
+}
+.nav-pills .nav-link {
+  background-color: transparent;
+  color: #000000;
 }
