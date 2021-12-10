@@ -976,7 +976,7 @@ p {
 .footer .social img {
   padding: 5px;
   margin-top: 30px;
-  width: 100%;
+  width: 90%;
 }
 @media only screen and (max-width: 700px) {
   .footer .social {
@@ -1461,4 +1461,16 @@ a {
 .nav-pills .nav-link {
   background-color: transparent;
   color: #000000;
+}
+.w3-display-left {
+  position: absolute;
+  top: 37%;
+  left: -15%;
+  font-size: 30px;
+}
+.w3-display-right {
+  position: absolute;
+  top: 37%;
+  right: -15%;
+  font-size: 30px;
 }
