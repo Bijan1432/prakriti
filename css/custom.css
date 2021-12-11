@@ -235,6 +235,8 @@ p {
           animation: right 5s infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 .overview .right-f-svg img {
   height: 189px;
@@ -302,6 +304,8 @@ p {
           animation: right 5s infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 .overview .left-f-svg img {
   height: 240px;
@@ -758,6 +762,8 @@ p {
           animation: right 5s infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 .location .right-f-svg img {
   height: 189px;
@@ -798,6 +804,8 @@ p {
           animation: right 5s infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 .location .left-f-svg img {
   height: 240px;
@@ -1212,6 +1220,11 @@ uncomment this part if you haven't added this code anywhere else
   font-size: 14px;
   border: 0px;
 }
+.side-btn:hover {
+  background-color: #007523;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
 .side-btn2 {
   float: right;
   -webkit-transform: rotate(-90deg);
@@ -1233,6 +1246,11 @@ uncomment this part if you haven't added this code anywhere else
   transition: all 0.5s ease-in-out 0s;
   font-size: 14px;
   border: 0px;
+}
+.side-btn2:hover {
+  background-color: #007523;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 #emi-calculation {
   -webkit-box-shadow: 0px 0px 5px -1px grey;
@@ -1473,4 +1491,108 @@ a {
   top: 37%;
   right: -15%;
   font-size: 30px;
+}
+.thank-u {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('/img/img1.jpg') center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img1.jpg') center / cover;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.thank-u h1 {
+  font-size: 85px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 13%;
+  color: #fff;
+}
+@media only screen and (max-width: 762px) {
+  .thank-u h1 {
+    margin-top: 53%;
+    font-size: 50px;
+  }
+}
+.thank-u h4 {
+  color: white;
+  font-size: 16px;
+}
+.thank-u .shape {
+  position: absolute;
+  top: -11%;
+  left: -3%;
+  -webkit-transform: rotate(355deg);
+  transform: rotate(22deg);
+}
+@media only screen and (max-width: 762px) {
+  .thank-u .shape img {
+    width: 75%;
+  }
+}
+.thank-u .shape2 {
+  position: absolute;
+  top: -10%;
+  left: -11%;
+  -webkit-transform: rotate(155deg);
+  transform: rotate(15deg);
+  background: linear-gradient(92deg, black 5%, transparent);
+}
+@media only screen and (max-width: 762px) {
+  .thank-u .shape2 img {
+    width: 70%;
+  }
+}
+.thank-u .social {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.thank-u .social img {
+  padding: 5px;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 700px) {
+}
+.thank-u .left-f-svg {
+  -webkit-animation: right 5s infinite;
+          animation: right 5s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.thank-u .left-f-svg img {
+  height: 240px;
+  position: absolute;
+  top: 142px;
+  left: 1px;
+  width: auto;
+}
+@keyframes right {
+  0% {
+    top: -32px;
+    -webkit-transform: rotate(335deg);
+            transform: rotate(335deg);
+  }
+  25% {
+    top: -22px;
+    -webkit-transform: rotate(358deg);
+            transform: rotate(358deg);
+  }
+  50% {
+    top: -12px;
+    -webkit-transform: rotate(305deg);
+            transform: rotate(305deg);
+  }
+  75% {
+    top: -22px;
+    -webkit-transform: rotate(305deg);
+            transform: rotate(305deg);
+  }
+  100% {
+    top: -32px;
+    -webkit-transform: rotate(335deg);
+            transform: rotate(335deg);
+  }
 }
