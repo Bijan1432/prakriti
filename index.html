@@ -160,7 +160,7 @@
                         <p>Nature is an eloquent poetry that touches every heart and cleanses your soul. It is the most
                             beautiful and attractive surrounding that gives us immense joy, happiness to live healthy.
                             Sugam Prakriti offers you what exactly you need- a modern-day life.</p>
-                        <a href="" class="btn-nd mt-md-4 d-inline-block">PROJECT WALKTHROUGH</a>
+                            <a href="https://www.youtube.com/watch?v=Uzu0qMOVtvM" class="btn-nd mt-md-4 d-inline-block popup-youtube">PROJECT WALKTHROUGH</a>
                     </div>
                     <div class="col-md-7">
 
@@ -1820,7 +1820,21 @@
         }
     </script>
 
-<!-- =============smooth scrool========================= -->
+<!-- =============Video popup========================= -->
+<script>
+    $(document).ready(function() {
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+});
+</script>
+<!-- =============Video popup========================= -->
 
 
 </body>
